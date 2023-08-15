@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dashboard: #0ea5e9;
+    --button: var(--dashboard);
+    --outline: #F1B41A;
+    --background: #E2E8F0;
+    --subtext: #6A6A6A;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.main-content {
+    background-color: var(--background);
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 20% 80%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 20% 80%;
+}
+
+.sidebar {
+    background-color: var(--dashboard);
+    color: white;
+    height: 100vh;
+}
+
+.list-items {
+    margin-top: 20px;
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 10px 40px;
+}
+
+.icon-text p {
+    margin-left: 15px;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+svg {
+    fill: white;
+}
+
+.icon-text svg {
+    height: 32px;
+    width: 32px;
+}
+
+.logo-text {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px 40px;
+}
+
+.logo-text h1 {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.list-items-bottom {
+    margin-top: 50px;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar svg {
+    fill: black;
+    height: 32px;
+    width: 32px;
+}
+
+.navbar,
+.left {
+    display: flex;
+    align-items: center;
+    margin: 20px 50px;
+    justify-content: space-around;
+}
+
+.right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px 20px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-input {
+    border: 1px solid var(--background);
+    border-radius: 25px;
+    width: 65%;
+    height: 25px;
+    background-color: var(--background);
+    padding: 6px;
+    margin-left: 20px;
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.welcome-msg {
+    font-weight: 700;
+}
+
+.content {
+    background-color: var(--background);
+    padding: 1.875rem 1.25rem;
+}
+
+.btn {
+    background-color: #0ea5e9;
+    color: white;
+    height: 45px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--dashboard) 1px solid;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ann-trend {
+    display: grid;
+    grid-template-rows: repeat(2, minmax(auto, 1fr));
+    margin-right: 20px;
+}
+
+.avatarNavbar,
+.avatarWelcome {
+    margin: 0 20px;
+}
+
+.content {
+    grid-template-columns: 70% 30%;
+    display: grid;
+}
+
+.card {
+    background-color: white;
+    width: 85%;
+    padding: 30px 20px;
+    border-radius: 10px;
+    height: auto;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+h6 {
+    font-size: 18px;
+}
+
+.section {
+    margin-bottom: 20px;
+}
+
+.subtext {
+    font-size: 14px;
+    color: var(--subtext);
+    margin-top: 10px;
+}
+
+.cards {
+    display: grid;
+    grid-template: repeat(3, minmax(280px, auto)) / repeat(2, 1fr);
+    gap: 20px;
+}
+
+.projects {
+    padding: 0 20px;
+}
+
+.project-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 15px;
+    border-left: #F1B41A solid 10px;
+}
+
+.project-description {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    color: #636363;
+    font-size: 18px;
+}
+
+.project-card svg {
+    height: 32px;
+    fill: #333333;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.profile-pic {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trend .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.trend .card p {
+    margin-left: 20px;
+}
+
+
+/*font-weights: 300, 400, 700*/
